@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar/navbar.jsx'
 import Hero from './components/hero/hero.jsx'
 import Footer from './components/footer/footer.jsx'
-import Title from './components/Title/Title.jsx'
+import Title from './src/omponents/Title/Title.jsx'
 import Contacts from './components/contacts/contacts.jsx'
 
 const App = () => {

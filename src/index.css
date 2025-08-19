@@ -35,4 +35,18 @@ a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-}     
+} 
+
+.dark-btn{
+    background: #10471d; /* Green background */
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 31px;
+    cursor: pointer;
+    border: 0;
+    outline:0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
