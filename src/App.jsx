@@ -4,14 +4,15 @@ import Hero from './components/hero/hero.jsx'
 import Footer from './components/footer/footer.jsx'
 import Title from './components/title/title.jsx'
 import Contacts from './components/contacts/contacts.jsx'
-import About from "./components/about/about.jsx";
-
+import About from "./components/about/about.jsx"
+import Features from "./components/features/features.jsx";
 const App = () => {
   return (
     <div>
       <Navbar />  
       <Hero />
       <About/>
+     <Features/>
       <div className="container">
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Contacts />
