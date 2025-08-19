@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar/navbar.jsx'
 import Hero from './components/hero/hero.jsx'
 import Footer from './components/footer/footer.jsx'
-import Title from './src/omponents/Title/Title.jsx'
+import Title from './components/title/title.jsx'
 import Contacts from './components/contacts/contacts.jsx'
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <Contacts />
       </div>  
       <Footer />
-      </div>
+    </div>
   )
 }
 
