@@ -6,6 +6,7 @@ import Title from './components/title/title.jsx'
 import Contacts from './components/contacts/contacts.jsx'
 import About from "./components/about/about.jsx"
 import Features from "./components/features/features.jsx";
+import Download from "./components/download/download.jsx";
 const App = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <About/>
      <Features/>
+     <Download/>
       <div className="container">
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Contacts />

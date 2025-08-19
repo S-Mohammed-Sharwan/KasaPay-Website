@@ -1,0 +1,99 @@
+.download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      gap: 50px;
+      flex-wrap: wrap; 
+    }
+
+    
+    .text-section {
+      max-width: 400px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .text-section:hover {
+      transform: translateY(-5px);
+    }
+
+    .text-section h2 {
+      color: #0A4D2E;
+      margin-bottom: 15px;
+      transition: color 0.3s ease;
+       text-align: center;
+    }
+
+    .text-section h2:hover {
+      color: #003399;
+    }
+
+    .text-section p {
+      font-size: 16px;
+      margin: 8px 0;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .features {
+      margin: 15px 0;
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .features li {
+      margin: 5px 0;
+      font-size: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .features li:hover {
+      transform: translateX(5px);
+      color: #0066ff;
+    }
+
+    .play-btn {
+      display: inline-block;
+      margin-top: 15px;
+      transition: transform 0.3s ease, box-shadow  0.3s ease;
+      
+    }
+
+    .play-btn img {
+      width: 160px;
+      height: auto;
+      border-radius: 8px;
+     
+    }
+
+    .play-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .demo-section {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 40px;
+      text-align: center;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .demo-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .demo-section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .demo-section:hover img {
+      transform: scale(1.03);
+    }
