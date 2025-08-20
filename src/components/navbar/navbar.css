@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 /* Main nav */
 nav {
   width: 100%;
@@ -5,12 +12,36 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  margin: 0; 
+  border: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
   background: transparent;
-  padding: 10px 20px;
+  padding: 10px 20px; /* increased base padding */
+  box-sizing: border-box;
+  height: 90px;
+}
+.hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.hero h1:first-child {
+  margin-top: 0;
 }
 
 /* Brand / Logo */
@@ -39,7 +70,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #28a745; /* optional hover effect */
+  color: #07b82d; /* optional hover effect */
 }
 
 /* Switch to dark background when scrolled */
@@ -50,6 +81,9 @@ nav ul li:hover {
 
 /* Medium screens */
 @media (max-width: 1200px) {
+  nav {
+    padding: 12px 30px; /* a bit smaller */
+  }
   .logo {
     width: 140px;
   }
@@ -58,21 +92,20 @@ nav ul li:hover {
   }
 }
 
-/* Small screens (<840px) */
 @media (max-width: 840px) {
   nav {
-    padding: 15px 0;
+    padding: 15px 20px; /* tighter padding on small screens */
   }
 
   nav ul {
     position: fixed;
     top: 0;
     right: -220px; /* start hidden off-screen */
-    background: #134f21;
+    background: #06a82c;
     width: 200px;
     padding-top: 70px;
     height: 100vh;
-    z-index: 20; /* visible now */
+    z-index: 20;
     transition: right 0.5s ease;
   }
 
@@ -82,8 +115,97 @@ nav ul li:hover {
     text-align: center;
   }
 
-  /* Example active state for open menu */
+  nav ul li:hover {
+  color: #28a745;
+}
+
   nav ul.active {
     right: 0;
   }
 }
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  width: 36px;
+  height: 28px;
+  position: relative;
+  cursor: pointer;
+  z-index: 30; 
+  background: transparent;
+  border: none;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger span:nth-child(1) { top: 3px; }
+.hamburger span:nth-child(2) { top: 12px; }
+.hamburger span:nth-child(3) { top: 21px; }
+
+.hamburger.active span:nth-child(1),
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  transform: none;   
+  opacity: 1;        
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+   z-index: 15;
+  display: none;
+}
+
+.nav-overlay.show {
+  display: block;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 840px) {
+  
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Lines are solid white in both states */
+.hamburger span {
+  background: #fff;      
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .hamburger span,
+  .hamburger.active span {
+    background: #ffffff;
+  }
+}
+
+.hamburger:hover {
+  background: rgba(1, 247, 18, 0.1); /* subtle hover effect */
+}
+.hamburger:focus {
+  outline: 2px solid rgba(4, 171, 29, 0.7); /* visible focus */
+  outline-offset: 2px;
+}
+.hamburger:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.9);
+}
+
