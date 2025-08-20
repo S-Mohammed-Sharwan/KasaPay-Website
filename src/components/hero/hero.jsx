@@ -3,7 +3,7 @@ import './hero.css';
 
 const Hero = () => {
   return (
-    <div className="hero container">
+    <div id="home" className="hero container">
       <div className="hero-inner">
         <div className="hero-text">
           <h1>Welcome to KasaPay</h1>

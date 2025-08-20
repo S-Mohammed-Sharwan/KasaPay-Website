@@ -2,7 +2,7 @@ import React from 'react'
 import './features.css'
 const features = () => {
   return (
-    <div>
+    <div id="features">
       <section class="features-section">
         <h2 class="section-title">Key Features</h2>
         <div class="features-grid">

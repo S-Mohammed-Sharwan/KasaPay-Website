@@ -2,7 +2,7 @@ import React from 'react';
 import './download.css';
 
 const Download = () => (
-  <div>
+  <div id="download">
     <div className="download">
       <div className="text-section">
         <h2>

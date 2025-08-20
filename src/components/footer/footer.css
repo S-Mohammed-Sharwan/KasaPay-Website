@@ -47,6 +47,7 @@
 
 .footer-section ul li a:hover {
     opacity: 1;
+     color: #4CAF50; 
 }
 
 .social-links {
@@ -69,6 +70,10 @@
 .social-links a:hover {
     transform: scale(1.1);
     background: #218838; /* Darker green on hover */
+}
+.footer-section ul li a:active {
+  color: #218838;
+  font-weight: bold;
 }
 
 .footer-bottom {
