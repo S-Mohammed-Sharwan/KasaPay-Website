@@ -5,6 +5,12 @@ html, body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; /* adjust based on your navbar height */
+}
+
+
 /* Main nav */
 nav {
   width: 100%;

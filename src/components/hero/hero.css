@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
 .hero-inner {
   max-width: 1200px;

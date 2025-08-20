@@ -1,24 +1,27 @@
 import React from 'react';
 import './hero.css';
 
-const Hero = () => {
+const Hero = ({ onNavItemClick }) => {
   return (
     <div id="home" className="hero container">
       <div className="hero-inner">
         <div className="hero-text">
           <h1>Welcome to KasaPay</h1>
           <p className="hero-subtitle">
-            Mangalore's Trusted Payment Solution for waste Collection Teams
-           </p>
+            Mangalore's Trusted Payment Solution for Waste Collection Teams
+          </p>
           <p>
             Your trusted partner for secure and efficient payments.
             Streamline Bill Payments with our secure and efficient platform. 
             Trusted by 20,000+ users across Mangalore and India.
           </p>
-          <button className="btn">
-            Get Started
+
+          {/* Button instead of li */}
+          <button className="btn" onClick={onNavItemClick}>
+            <a href="#about">Get Started</a>
           </button>
         </div>
+
         <div className="hero-stats">
           <div className="stat">
             <h3>20K+</h3>

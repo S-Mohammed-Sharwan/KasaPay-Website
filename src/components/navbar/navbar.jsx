@@ -64,7 +64,7 @@ const Navbar = () => {
           <li onClick={onNavItemClick}><a href="#about">About us</a></li>
           <li onClick={onNavItemClick}><a href="#features">Features</a></li>
           <li onClick={onNavItemClick}><a href="#download">Download</a></li>
-          <li onClick={onNavItemClick}><button className="btn">Contact us</button></li>
+          <li onClick={onNavItemClick}><button className="btn"><a href="#contact">Contact us</a></button></li>
         </ul>
       </nav>
     </>
