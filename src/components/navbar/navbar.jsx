@@ -5,7 +5,9 @@ const navbar = () => {
   return (
     <nav className='container'>
          <div class="nav-brand">
+          <div className='logo'>
             <span><a href='#'>KasaPay</a></span>
+          </div>  
           </div>
         <ul>
             <li>Home</li>

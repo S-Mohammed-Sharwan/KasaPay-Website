@@ -7,7 +7,9 @@ const Hero = () => {
       <div className="hero-inner">
         <div className="hero-text">
           <h1>Welcome to KasaPay</h1>
-          <p className="hero-subtitle">Mangalore's Trusted Payment Solution for waste Collection Teams</p>
+          <p className="hero-subtitle">
+            Mangalore's Trusted Payment Solution for waste Collection Teams
+           </p>
           <p>
             Your trusted partner for secure and efficient payments.
             Streamline Bill Payments with our secure and efficient platform. 
