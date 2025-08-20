@@ -113,17 +113,4 @@
   transform: scale(1.04);
 }
 
-/* Responsive design */
-@media (max-width: 900px) {
-  .download {
-    flex-direction: column;
-    gap: 32px;
-    padding: 32px 10px;
-  }
-  .text-section,
-  .demo-section {
-    width: 100%;
-    min-width: 0;
-    min-height: unset;
-  }
-}
+
