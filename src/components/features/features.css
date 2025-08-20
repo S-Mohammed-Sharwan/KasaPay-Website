@@ -33,13 +33,19 @@
 }
 
 .feature-icon {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ADD THIS */
   width: 60px;
   height: 60px;
   margin: 0 auto 15px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0A4D2E, #00ff6a);
+  background: linear-gradient(135deg, #0f7244, #10471d);
   box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
 }
+
 
 .feature-box h3 {
   font-size: 18px;

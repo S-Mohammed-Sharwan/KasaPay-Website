@@ -1,27 +1,105 @@
 .hero {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(2, 20, 13, 0.7), rgba(5, 32, 9, 0.7)), url('../../assets/hero.jpg') no-repeat center center/cover;
-    background-size: cover;
-    background-position: center;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   } 
-   
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(2, 20, 13, 0.7), rgba(5, 32, 9, 0.7)), url('../../assets/hero.jpg') no-repeat center center/cover;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 48px 64px 48px; /* Guard for small screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(40px); /* fine-tune with a positive value to nudge downward */
+}
+
+
 .hero-text {
-    text-align: center;
-    max-width: 800px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #61e41a;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .hero-text h1 {
-    font-size: 60px;
-    font-weight: 600;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 .hero-text p {
-    max-width: 700px;
-    margin: 10px auto 20px;
-    line-height: 1.4;
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}
+
+/* Button style */
+.btn {
+  background: #fff;
+  color: #1b3a24;
+  border: none;
+  padding: 0.9em 2em;
+  font-size: 1.2rem;
+  border-radius: 2em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 1.5rem;
+}
+.btn:hover {
+  background: #61e41a;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .hero-inner {
+    padding: 32px 8vw;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-inner {
+    padding: 24px 1rem;
+  }
 }

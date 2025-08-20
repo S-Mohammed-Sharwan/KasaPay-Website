@@ -1,99 +1,129 @@
 .download {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 50px;
-      gap: 50px;
-      flex-wrap: wrap; 
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
-    
-    .text-section {
-      max-width: 400px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.text-section {
+  max-width: 400px;
+  background: #f5fff9;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(10, 77, 46, 0.07);
+  padding: 36px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .text-section:hover {
-      transform: translateY(-5px);
-    }
+.text-section:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 6px 24px rgba(10, 77, 46, 0.15);
+}
 
-    .text-section h2 {
-      color: #0A4D2E;
-      margin-bottom: 15px;
-      transition: color 0.3s ease;
-       text-align: center;
-    }
+.text-section h2 {
+  color: #0A4D2E;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
 
-    .text-section h2:hover {
-      color: #003399;
-    }
+.text-section h2:hover {
+  color: #003399;
+}
 
-    .text-section p {
-      font-size: 16px;
-      margin: 8px 0;
-      line-height: 1.5;
-      text-align: center;
-    }
+.text-section p {
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.5;
+  text-align: center;
+}
 
-    .features {
-      margin: 15px 0;
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
+.features {
+  margin: 18px 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 
-    .features li {
-      margin: 5px 0;
-      font-size: 15px;
-      transition: transform 0.3s ease;
-    }
+.features li {
+  margin: 7px 0;
+  font-size: 15px;
+  transition: transform 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .features li:hover {
-      transform: translateX(5px);
-      color: #0066ff;
-    }
+.features li:hover {
+  transform: translateX(8px) scale(1.07);
+  color: #0066ff;
+}
 
-    .play-btn {
-      display: inline-block;
-      margin-top: 15px;
-      transition: transform 0.3s ease, box-shadow  0.3s ease;
-      
-    }
+.play-btn {
+  display: inline-block;
+  margin-top: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
 
-    .play-btn img {
-      width: 160px;
-      height: auto;
-      border-radius: 8px;
-     
-    }
+.play-btn img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 77, 46, 0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
 
-    .play-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
+.play-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
 
-    .demo-section {
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 40px;
-      text-align: center;
-      width: 250px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.demo-section {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.11);
+  padding: 40px 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+}
 
-    .demo-section img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-      transition: transform 0.3s ease;
-    }
+.demo-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
 
-    .demo-section:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
+.demo-section:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
 
-    .demo-section:hover img {
-      transform: scale(1.03);
-    }
+.demo-section:hover img {
+  transform: scale(1.04);
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .download {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 10px;
+  }
+  .text-section,
+  .demo-section {
+    width: 100%;
+    min-width: 0;
+    min-height: unset;
+  }
+}
