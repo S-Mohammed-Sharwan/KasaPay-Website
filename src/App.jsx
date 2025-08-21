@@ -14,12 +14,9 @@ const App = () => {
       <Hero />
       <About/>
      <Features/>
-        <div className="container">
-        <Title subTitle='Download KasaPay App' title='Get the KasaPay app from Google Play Store and start managing bill payments efficiently.' />
         <Download/>
-      </div> 
-      <div className="container">
-        <Title subTitle='Contact Us' title='Get in Touch' />
+       <div className="container">
+        <Title subTitle='' title='' />
         <Contacts />
       </div>  
       <Footer />

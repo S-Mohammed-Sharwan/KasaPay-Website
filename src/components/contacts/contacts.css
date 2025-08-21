@@ -1,6 +1,6 @@
 .contact{
   display: flex;
-  margin: 80px auto;
+  margin: 40px auto;
   max-width: 90%;
   align-content: center;
   justify-content: space-between;
@@ -11,9 +11,23 @@
   color: #676767;  
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 20px; /* reduce spacing below the whole block */
+}
+
+.title h5 {
+  margin: 0; /* removes default spacing */
+}
+
+.title h3 {
+  margin: 5px 0 10px 0; /* reduce bottom gap */
+}
+
+
 .contact-col h3 {
   font-size: 24px;
-  color: #093414; /* Dark green */
+  color: #073d15; /* Dark green */
   font-weight: bold;
   display: flex;
   align-items: center;

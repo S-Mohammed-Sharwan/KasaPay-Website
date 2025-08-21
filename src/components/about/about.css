@@ -12,18 +12,19 @@
 
 /* Small heading (About KasaPay) */
 .about h3 {
-  font-weight: 600;
-  font-size: 16px;
-  color: #0A4D2E;   /* dark green, matches "Send us a message" */
+  font-weight: 1200;
+  font-size: 25px;
+  color: #0f3f08;   /* dark green, matches "Send us a message" */
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* Big title (Simplifying Waste Collection Payments) */
 .about h2 {
   font-size: 35px;
   font-weight: 700;
-  color: #000F38;   /* same as other large titles */
+  color: #003804;   /* same as other large titles */
   margin: 10px 0;
   max-width: 600px; /* allow bigger width for readability */
   line-height: 1.3;

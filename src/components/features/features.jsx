@@ -4,7 +4,7 @@ const features = () => {
   return (
     <div id="features">
       <section class="features-section">
-        <h2 class="section-title">Key Features</h2>
+        <h2 class="section-title">KEY FEATURES</h2>
         <div class="features-grid">
           <div class="feature-box">
             <div class="feature-icon">

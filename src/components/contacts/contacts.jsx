@@ -3,7 +3,12 @@ import './contacts.css'
 
 const contacts = () => {
   return (
-    <div className='contact' id="contact">
+    <div>
+    <div className="title" id="contact">
+          <h5>Contact Us</h5>
+          <h3 >Get in Touch </h3>
+        </div>
+    <div className='contact' >      
       <div className="contact-col">
         <h3>Send us a message</h3>
         <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our customers.</p>
@@ -23,6 +28,7 @@ const contacts = () => {
             <textarea name="message" rows="6" placeholder='Type your message here' required></textarea>
             <button type='submit' className='btn dark-btn'>Submit</button>
         </form>
+        </div>
         </div>
     </div>
   )

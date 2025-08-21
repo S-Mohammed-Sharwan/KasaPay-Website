@@ -8,7 +8,7 @@ const about = () => {
         <img src="" alt="" />
       </div>
       <div className="about-right">
-        <h3>About KasaPay</h3>
+        <h3 >About KasaPay</h3>
         <h2>Simplifying Waste Collection Payments</h2>
         <p>
           KasaPay is a specialized payment platform designed specifically for
