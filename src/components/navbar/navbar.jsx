@@ -1,57 +1,57 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './navbar.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef(null);
 
-  // Close on ESC key
+  // Close on ESC
   useEffect(() => {
     const onKeyDown = (e) => {
-      if (e.key === 'Escape') setMenuOpen(false);
+      if (e.key === "Escape") setMenuOpen(false);
     };
-    document.addEventListener('keydown', onKeyDown);
-    return () => document.removeEventListener('keydown', onKeyDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  // Toggle dark background on scroll
+  // Dark nav on scroll
   useEffect(() => {
     const onScroll = () => {
       if (!navRef.current) return;
       if (window.scrollY > 10) {
-        navRef.current.classList.add('dark-nav');
+        navRef.current.classList.add("dark-nav");
       } else {
-        navRef.current.classList.remove('dark-nav');
+        navRef.current.classList.remove("dark-nav");
       }
     };
-    window.addEventListener('scroll', onScroll);
-    onScroll(); // run once on mount
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close menu after clicking a link
+  // Close after clicking
   const onNavItemClick = () => setMenuOpen(false);
 
   return (
     <>
       {/* Overlay */}
       <div
-        className={`nav-overlay ${menuOpen ? 'show' : ''}`}
+        className={`nav-overlay ${menuOpen ? "show" : ""}`}
         onClick={() => setMenuOpen(false)}
       />
 
       <nav ref={navRef}>
+        {/* Brand */}
         <div className="nav-brand">
-          <span><a href="#">KasaPay</a></span>
+          <a href="#">KasaPay</a>
         </div>
 
         {/* Hamburger */}
         <button
-          className={`hamburger ${menuOpen ? 'active' : ''}`}
+          className={`hamburger ${menuOpen ? "active" : ""}`}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
-          aria-controls="primary-navigation"
-          onClick={() => setMenuOpen((v) => !v)}
+          onClick={() => setMenuOpen((prev) => !prev)}
         >
           <span></span>
           <span></span>
@@ -59,12 +59,14 @@ const Navbar = () => {
         </button>
 
         {/* Menu */}
-        <ul id="primary-navigation" className={menuOpen ? 'active' : ''}>
+        <ul id="primary-navigation" className={menuOpen ? "active" : ""}>
           <li onClick={onNavItemClick}><a href="#">Home</a></li>
           <li onClick={onNavItemClick}><a href="#about">About us</a></li>
           <li onClick={onNavItemClick}><a href="#features">Features</a></li>
           <li onClick={onNavItemClick}><a href="#download">Download</a></li>
-          <li onClick={onNavItemClick}><button className="btn"><a href="#contact">Contact us</a></button></li>
+          <li onClick={onNavItemClick}>
+            <a href="#contact" className="btn">Contact us</a>
+          </li>
         </ul>
       </nav>
     </>

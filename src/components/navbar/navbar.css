@@ -28,6 +28,7 @@ nav {
   padding: 10px 20px; /* increased base padding */
   box-sizing: border-box;
   height: 90px;
+  z-index: 1000;
 }
 .hero {
   margin-top: 0 !important;
@@ -215,3 +216,27 @@ nav a {
   outline: 2px solid rgba(255,255,255,0.9);
 }
 
+@media (max-width: 840px) {
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    background: #06a82c;
+    width: 200px;
+    padding-top: 90px;  /* match your nav height (90px) */
+    height: 100dvh;     /* more reliable on mobile than 100vh */
+    z-index: 1200;      /* above overlay */
+    transition: right 0.5s ease;
+    overflow-y: auto;   /* in case content exceeds viewport */
+    box-sizing: border-box;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1300;      /* above menu and overlay so it stays clickable */
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+}
