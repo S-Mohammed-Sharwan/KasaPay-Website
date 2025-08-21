@@ -8,7 +8,7 @@
 
 .contact-col {
   flex-basis: 48%;
-  color: 676767;  
+  color: #676767;  
 }
 
 .contact-col h3 {
@@ -62,7 +62,39 @@
   resize: none;
 }
 
-/*.contact-col span {
-  display: block;
-  margin: 20px 0;
-}*/
+
+
+ @media (max-width: 768px) {
+  .contact {
+    flex-direction: column;   
+    align-items: center;      
+  }
+
+  .contact-col {
+    flex-basis: 100%;         
+    margin-bottom: 20px;
+  }
+
+  .contact form input, 
+  .contact form textarea {
+    font-size: 16px;          
+  }
+
+  .btn.dark-btn {
+    width: 100%;              
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+.contact {
+  padding: 20px;
+}
+@media (max-width: 480px) {
+  .contact-col h3 {
+    font-size: 20px;
+  }
+  .contact-col p {
+    font-size: 14px;
+  }
+} 
+
