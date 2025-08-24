@@ -46,13 +46,13 @@ const features = () => {
             <p>All transactions sync across devices instantly.</p>
           </div>
 
-          <div class="feature-box">
+          {/* <div class="feature-box">
             <div class="feature-icon">
               <i class="fas fa-headset"></i>
             </div>
-            <h3>24/7 Support</h3>
+            <h3>24/7 </h3>
             <p>Dedicated support for field teams.</p>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

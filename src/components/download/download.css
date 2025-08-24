@@ -1,18 +1,20 @@
 .download {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 25px 15px;
-  gap: 20px;
+  align-items: flex-start;
+  padding: 20px 10px;
+  gap: 100px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .text-section {
-  max-width: 400px;
+  max-width: 750px;   /* increased width */
+  min-height: 350px;
   background: #f5fff9;
   border-radius: 18px;
   box-shadow: 0 4px 18px rgba(10, 77, 46, 0.07);
-  padding: 36px 28px;
+  padding: 120px 200px; /* ✅ reduced from 150px */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -25,8 +27,8 @@
   color: #0A4D2E;
   margin-bottom: 15px;
   text-align: center;
-  font-size: 2.1rem;
-  letter-spacing: 1px;
+  font-size: 2rem; /* ✅ slightly smaller */
+  letter-spacing: 0.5px;
   transition: color 0.3s;
 }
 
@@ -34,33 +36,20 @@
   color: #003399;
 }
 
-.text-section p {
-  font-size: 16px;
-  margin: 8px 0;
-  line-height: 1.5;
-  text-align: center;
-}
-
 .features {
   margin: 18px 0;
   list-style: none;
   padding: 0;
- 
- 
 }
 
 .features li {
   display: flex;
-  gap: 8px; 
-  transition: transform 0.3s, color 0.3s;
-
+  gap: 10px;
   margin: 7px 0;
-  font-size: 15px;
-  transition: transform 0.3s, color 0.3s;
-  display: flex;
+  font-size: 18px; /* ✅ better balance */
   align-items: center;
-  
   justify-content: flex-start;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .features li:hover {
@@ -68,46 +57,33 @@
   color: #0066ff;
 }
 
-.play-btn {
-  display: inline-block;
-  margin-top: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-}
-
 .play-btn img {
-  width: 160px;
+  width: 150px; /* ✅ slightly smaller */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 77, 46, 0.08);
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.play-btn:hover {
-  transform: scale(1.07);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-
 .demo-section {
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.11);
-  padding: 40px 20px;
-  text-align: center;
-  width: 250px;
+  padding: 15px;
+  width: 320px; /* ✅ slightly smaller */
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 450px;
+  min-height: 320px;
 }
 
 .demo-section img {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  transition: transform 0.3s;
   object-fit: cover;
+  transition: transform 0.3s;
 }
 
 .demo-section:hover {
@@ -118,5 +94,3 @@
 .demo-section:hover img {
   transform: scale(1.04);
 }
-
-
