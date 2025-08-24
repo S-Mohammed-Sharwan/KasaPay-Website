@@ -226,33 +226,49 @@
   background: #fff;
 }
 
-/* Mobile tweak */
-@media (max-width: 560px){
-  .carousel-card{ aspect-ratio: 4 / 3; }
-}
-@media (max-width: 600px) {
-  .about {
-    padding: 0 10px;
+/* Mobile: one column, About (intro) on top, then highlights, then facts, then images */
+@media (max-width: 600px){
+  .about{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"    /* About text */
+      "high"     /* highlights */
+      "facts"    /* Did you know */
+      "visual";  /* images/carousel */
+    gap: 18px;
+    margin: 0 auto 20px;
+  }
+
+  .about-right{ grid-area: intro; }
+  .about-highlights{ grid-area: high; }
+  .facts.two-col-left{ grid-area: facts; }
+  .about-imgs.two-col-right{
+    grid-area: visual;
+    margin: 0;
+    display: block; /* prevent reintroducing columns */
+  }
+
+  /* Cards fit mobile width */
+  .carousel-card{
     width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3; /* or 3/4 for taller look */
   }
-  
-  .about h2 {
-    font-size: 28px; /* slightly smaller on small screens */
-  }
-  
-  .about-highlights {
-    grid-template-columns: 1fr; /* single column on small screens */
-    gap: 15px;
-  }
-  
-  .about-imgs {
-    grid-template-columns: 1fr; /* single column for images */
-    gap: 15px;
-    margin: 40px auto;
+
+  .about-card{
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: auto;
   }
 }
 
-/* Place this where your left text lives (e.g., under .about-right) */
+/* Optional: equal columns on wider screens */
+@media (min-width: 901px){
+  .about.equal-cols{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .facts{
   margin-top: 24px;
   background: #f9fbff;
@@ -303,11 +319,5 @@
 .about-highlights{ grid-area: high; }
 .facts.two-col-left{ grid-area: facts; }
 .about-imgs.two-col-right{ grid-area: visual; }
-.about{ grid-template-columns: 0.8fr 1fr; } 
-
-@media (min-width: 901px){
-  .about.equal-cols{
-    grid-template-columns: 1fr 1fr;
-  }
-}
+ 
 
