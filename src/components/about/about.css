@@ -1,10 +1,19 @@
 .about {
   margin: 100px auto;
-  display: flex;
-  flex-direction: column;  
+   flex-direction: column;  
   align-items: flex-start;
   width: 90%;
-}
+  margin-top: 0%;
+   width: min(1200px, 90%);
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;         /* facts a bit wider than image */
+  grid-template-areas:
+    "intro  intro"
+    "high   high"
+    "facts  visual";
+  gap: 21px 44px;                           /* row gap / column gap */
+  }
 
 .about-right {
   width: 100%;
@@ -16,8 +25,8 @@
   font-size: 25px;
   color: #0f3f08;   /* dark green, matches "Send us a message" */
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   text-align: center;
+  margin-top: 5px;
 }
 
 /* Big title (Simplifying Waste Collection Payments) */
@@ -153,3 +162,152 @@
 .section tr:nth-child(even) {
   background: #f2f2f2;
 }
+
+/* Carousel wrapper within your .about-imgs row */
+.carousel-card{
+  position: relative;
+  width: min(900px, 100%);
+  aspect-ratio: 16 / 9;          /* change to 4/5 if you want taller */
+  border-radius: 14px;
+  background: #0b0f14;           /* dark frame */
+  box-shadow: 0 10px 28px rgba(0,0,0,.22);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 10px;                 /* inner frame padding */
+}
+
+/* The visible area that holds slides */
+.carousel-viewport{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Each slide covers the viewport; only one is visible (opacity=1) */
+.carousel-slide{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity .8s ease, transform .8s ease;
+  will-change: opacity, transform;
+}
+.carousel-slide.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Dots anchored to the card bottom */
+.carousel-dots{
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+.carousel-dots .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff66;
+  cursor: pointer;
+  transition: background .25s ease;
+}
+.carousel-dots .dot.active{
+  background: #fff;
+}
+
+/* Mobile tweak */
+@media (max-width: 560px){
+  .carousel-card{ aspect-ratio: 4 / 3; }
+}
+@media (max-width: 600px) {
+  .about {
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  .about h2 {
+    font-size: 28px; /* slightly smaller on small screens */
+  }
+  
+  .about-highlights {
+    grid-template-columns: 1fr; /* single column on small screens */
+    gap: 15px;
+  }
+  
+  .about-imgs {
+    grid-template-columns: 1fr; /* single column for images */
+    gap: 15px;
+    margin: 40px auto;
+  }
+}
+
+/* Place this where your left text lives (e.g., under .about-right) */
+.facts{
+  margin-top: 24px;
+  background: #f9fbff;
+  border: 1px solid #e6eefc;
+  border-radius: 14px;
+  padding: 18px 16px;
+}
+
+.facts-title{
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0A4D2E;
+  text-align: left; /* align with left column */
+}
+
+.facts-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.facts-list li{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 10px 12px;
+  background: #ffffff;
+  border: 1px solid #e9f2ec;
+  border-radius: 10px;
+}
+
+.fact-label{
+  font-weight: 700;
+  color: #0A4D2E;
+}
+
+.fact-value{
+  color: #444;
+  font-size: 14.5px;
+}
+
+
+/* map areas */
+.about-right{ grid-area: intro; }
+.about-highlights{ grid-area: high; }
+.facts.two-col-left{ grid-area: facts; }
+.about-imgs.two-col-right{ grid-area: visual; }
+.about{ grid-template-columns: 0.8fr 1fr; } 
+
+@media (min-width: 901px){
+  .about.equal-cols{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
