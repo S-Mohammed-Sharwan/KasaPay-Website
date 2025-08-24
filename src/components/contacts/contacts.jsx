@@ -17,7 +17,7 @@ const contacts = () => {
         <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our customers.</p>
        <ul class="contact-info">
          <li><i class="fas fa-envelope"></i> support@kasapay.com</li>
-         <li><i class="fas fa-phone"></i> +91 7483536650</li>
+         <li><i class="fas fa-phone"></i> +91 --------</li>
          <li><i class="fas fa-map-marker-alt"></i> Mangalore, Karnataka, India</li>
        </ul>
       </div>

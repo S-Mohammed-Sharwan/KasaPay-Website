@@ -5,7 +5,7 @@ const Download = () => (
   <div id="download">
     <div className="title">
           <h3>Download KasaPay App</h3>
-          <h2>Get the KasaPay app from Google Play Store and start managing bill payments efficiently. </h2>
+          <h2>Get the KasaPay app from Google Play Store </h2>
     </div>
     <div className="download">
       <div className="text-section">        
