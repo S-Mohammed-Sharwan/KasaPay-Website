@@ -29,17 +29,17 @@ const footer = () => {
                 <div class="footer-section">
                     <h4>Support</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#contact">Help Center</a></li>
+                        <li><a href="#contact">FAQs</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#footer">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <p>Mangalore, Karnataka, India</p>
                     <p>support@kasapay.com</p>
-                    <p>+91 7483536650</p>
+                    <p>+91  ---------</p>
                 </div>
             </div> 
             <div class="footer-bottom">
