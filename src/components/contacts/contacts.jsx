@@ -5,8 +5,11 @@ const contacts = () => {
   return (
     <div>
     <div className="title" id="contact">
-          <h5>Contact Us</h5>
-          <h3 >Get in Touch </h3>
+      <div className="title">
+          <h3>Contact Us</h3>
+          <h2 >Get in Touch </h2>
+      </div>
+          
         </div>
     <div className='contact' >      
       <div className="contact-col">
