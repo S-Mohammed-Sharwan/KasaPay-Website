@@ -117,7 +117,7 @@
 /* did you know */
 .section {
   margin: 40px auto;
-  padding: 100px;          /* more inner space */
+  padding: 50px;          /* more inner space */
   max-width: 1200px;       /* increase overall width */
   width: 90%;              /* allow it to stretch on larger screens */
   background: #f9fbff;
