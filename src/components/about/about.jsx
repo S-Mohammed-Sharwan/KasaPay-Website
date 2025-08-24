@@ -1,5 +1,9 @@
 import React from 'react'
 import './about.css'
+import aboutimg1 from '../../assets/img1.jpg'
+import aboutimg2 from '../../assets/img2.jpg'
+import aboutimg3 from '../../assets/img3.jpg'
+import aboutimg4 from '../../assets/img4.jpg'
 
 const about = () => {
   return (
@@ -27,6 +31,12 @@ const about = () => {
         <div className="highlight-box">Real-time Processing</div>
         <div className="highlight-box">User-Friendly Interface</div>
         <div className="highlight-box">Detailed Analytics</div>
+      </div>
+      <div className="about-imgs">
+        <div className="highlight-img"><img src={aboutimg1} /></div>
+        <div className="highlight-img"><img src={aboutimg2} /></div>
+        <div className="highlight-img"><img src={aboutimg3} /></div>
+        <div className="highlight-img"><img src={aboutimg4} /></div>
       </div>
     </div>
   );

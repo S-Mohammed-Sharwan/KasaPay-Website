@@ -4,7 +4,7 @@ import './download.css';
 const Download = () => (
   <div id="download">
     <div className="title">
-          <h4>Download KasaPay App</h4>
+          <h3>Download KasaPay App</h3>
           <h2>Get the KasaPay app from Google Play Store and start managing bill payments efficiently. </h2>
         </div>
     <div className="download">
