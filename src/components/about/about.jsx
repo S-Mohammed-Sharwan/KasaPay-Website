@@ -64,7 +64,7 @@ const About = () => {
         <ul className="facts-list">
           <li>
             <span className="fact-label">Municipal Solid Waste</span>
-            <span className="fact-value">~320 tons generated • ~245 tons collected</span>
+            <span className="fact-value">320 tons generated • 245 tons collected</span>
           </li>
           <li>
             <span className="fact-label">Sanitary Waste</span>
@@ -72,11 +72,11 @@ const About = () => {
           </li>
           <li>
             <span className="fact-label">Biomedical Waste</span>
-            <span className="fact-value">~14.5 tons</span>
+            <span className="fact-value">14.5 tons</span>
           </li>
           <li>
             <span className="fact-label">E‑waste</span>
-            <span className="fact-value">~2 tons</span>
+            <span className="fact-value">2 tons</span>
           </li>
         </ul>
       </section>
