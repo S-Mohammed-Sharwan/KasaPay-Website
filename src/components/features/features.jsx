@@ -46,6 +46,13 @@ const Features = () => {
             <h3>Real-time Sync</h3>
             <p>All transactions sync across devices instantly.</p>
           </div>
+          <div className="feature-box">
+            <div className="feature-icon">
+              <i className="fas fa-comments"></i>
+            </div>
+            <h3>In-App Support Chat</h3>
+            <p>Instant help for collectors and customers within the app.</p>
+          </div>
         </div>
       </section>
     </div>
