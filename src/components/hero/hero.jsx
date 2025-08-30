@@ -6,7 +6,7 @@ const Hero = ({ onNavItemClick }) => {
     <div id="home" className="hero container">
       <div className="hero-inner">
         <div className="hero-text">
-          <h1>Welcome to KasaPay</h1>
+          <h1>Welcome to SwachPay</h1>
           <p className="hero-subtitle">
             Mangalore's Trusted Payment Solution for Waste Collection Teams
           </p>

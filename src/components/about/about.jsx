@@ -35,10 +35,10 @@ const About = () => {
     <div id="about" className="about">
       {/* Row 0: Intro text (spans full width) */}
       <div className="about-right">
-        <h3>About KasaPay</h3>
+        <h3>About SwachPay</h3>
         <h2>Simplifying Waste Collection Payments</h2>
         <p>
-          KasaPay is a specialized payment platform designed specifically for waste
+          SwachPay is a specialized payment platform designed specifically for waste
           collection teams in India. Our mission is to simplify and secure the bill
           payment process for both collection agents and consumers.
         </p>

@@ -8,7 +8,7 @@ const footer = () => {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>KasaPay</h3>
+                    <h3>SwachPay</h3>
                     <p>Mangalore's trusted payment solution for waste collection teams.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -38,12 +38,12 @@ const footer = () => {
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <p>Mangalore, Karnataka, India</p>
-                    <p>support@kasapay.com</p>
+                    <p>support@swachpay.com</p>
                     <p>+91 ---------</p>
                 </div>
             </div> 
             <div class="footer-bottom">
-                <p>&copy; 2025 KasaPay. All rights reserved. | Designed for waste collection teams in India</p>
+                <p>&copy; 2025 SwachPay. All rights reserved. | Designed for waste collection teams in India</p>
             </div>             
         </div>
     </footer>
