@@ -1,5 +1,6 @@
 import React from "react";
 import "./download.css";
+import appDemo from "../../assets/demoimg.png"; 
 
 const Download = () => (
   <div id="download">
@@ -18,17 +19,18 @@ const Download = () => (
           <li>✅ Secure transactions</li>
           <li>✅ Offline capability</li>
         </ul>
-        <a href="#" className="play-btn">
+        {/*<a href="#" className="play-btn">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
             alt="Google Play"
           />
-        </a>
+        </a>*/}
+        <h4 className="hero-note">Available soon on Google Play</h4>
       </div>
 
       <div className="demo-section">
         <img
-          src="https://dummyimage.com/200x400/cccccc/000000&text=App+Demo"
+          src={appDemo}
           alt="App demo"
         />
       </div>

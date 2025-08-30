@@ -36,7 +36,7 @@ const Hero = ({ onNavItemClick }) => {
             <p>Support Available</p>
           </div>
         </div>
-        <h4 className="hero-note">Available soon on Google Play.</h4>
+        <h4 className="hero-note">Available soon on Google Play</h4>
       </div>
     </div>
   );
