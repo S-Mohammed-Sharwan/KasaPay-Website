@@ -39,7 +39,7 @@ const Contacts = () => {
           </p>
           <ul className="contact-info">
             <li><i className="fas fa-envelope"></i> support@swachpay.com</li>
-            <li><i className="fas fa-phone"></i> +91 --------</li>
+            {/*<li><i className="fas fa-phone"></i> +91 --------</li>*/}
             <li><i className="fas fa-map-marker-alt"></i> Mangalore, Karnataka, India</li>
           </ul>
         </div>

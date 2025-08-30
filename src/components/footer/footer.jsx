@@ -39,7 +39,7 @@ const footer = () => {
                     <h4>Contact Info</h4>
                     <p>Mangalore, Karnataka, India</p>
                     <p>support@swachpay.com</p>
-                    <p>+91 ---------</p>
+                    {/*<p>+91 ---------</p>*/}
                 </div>
             </div> 
             <div class="footer-bottom">

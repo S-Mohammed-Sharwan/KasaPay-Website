@@ -32,7 +32,7 @@ const Hero = ({ onNavItemClick }) => {
             <p>Primary Location</p>
           </div>
           <div className="stat">
-            <h3>24/7</h3>
+            <h3>In-App Chat</h3>
             <p>Support Available</p>
           </div>
         </div>
