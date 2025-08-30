@@ -21,6 +21,16 @@
   transform: translateY(40px); /* fine-tune with a positive value to nudge downward */
 }
 
+.hero-note {
+  color: rgba(128, 128, 128, 0.6); /* Gray with 60% opacity for a faded look */
+  font-weight: 500;                /* Slightly bold for subtle emphasis */
+  font-size: 1.5rem;               /* Slightly larger for readability */
+  transition: color 0.3s ease;     /* Smooth transition if you want a hover effect */
+}
+.hero-note:hover {
+  color: rgba(156, 154, 154, 0.9); /* Darker gray on hover */
+}
+
 .hero-text {
   text-align: center;
   max-width: 800px;
