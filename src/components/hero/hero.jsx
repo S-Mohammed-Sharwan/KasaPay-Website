@@ -10,11 +10,13 @@ const Hero = ({ onNavItemClick }) => {
           <p className="hero-subtitle">
             Mangalore's Trusted Payment Solution for Waste Collection Teams
           </p>
+          
           <p>
             Your trusted partner for secure and efficient payments.
             Streamline Bill Payments with our secure and efficient platform. 
             Trusted by 20,000+ users across Mangalore and India.
           </p>
+          <p className='hero-suptitle'> Powered by HasiruDala</p>
 
           {/* Button instead of li */}
           <button className="btn" onClick={onNavItemClick}>
