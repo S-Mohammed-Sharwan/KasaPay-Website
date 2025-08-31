@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -63,4 +67,15 @@ a{
     .btn, .dark-btn {
         padding: 14px 22px;
     }
+}
+
+.hero-note {
+  color: rgba(128, 128, 128, 0.6); /* Gray with 60% opacity for a faded look */
+  font-weight: 500;                /* Slightly bold for subtle emphasis */
+  font-size: 1.5rem;               /* Slightly larger for readability */
+  transition: color 0.3s ease;
+  cursor: pointer;     /* Smooth transition if you want a hover effect */
+}
+.hero-note:hover {
+  color: rgba(101, 87, 87, 0.9); /* Darker gray on hover */
 }

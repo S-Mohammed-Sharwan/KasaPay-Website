@@ -169,7 +169,7 @@
   width: min(900px, 100%);
   aspect-ratio: 16 / 9;          /* change to 4/5 if you want taller */
   border-radius: 14px;
-  background: #0b0f14;           /* dark frame */
+  background: #0a430b;           /* dark frame */
   box-shadow: 0 10px 28px rgba(0,0,0,.22);
   overflow: hidden;
   display: grid;

@@ -43,7 +43,7 @@ const Navbar = () => {
       <nav ref={navRef}>
         {/* Brand */}
         <div className="nav-brand">
-          <a href="#">KasaPay</a>
+          <a href="#">SwachPay</a>
         </div>
 
         {/* Hamburger */}
