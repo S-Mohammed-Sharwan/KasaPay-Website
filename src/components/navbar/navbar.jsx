@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import logo from "../../assets/logo2.png";
 import "./navbar.css";
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +45,10 @@ const Navbar = () => {
       <nav ref={navRef}>
         {/* Brand */}
         <div className="nav-brand">
-          <a href="#">SwachPay</a>
+          <a href="#">
+            <img src={logo} alt="SwachPay Logo" className="nav-logo" />
+            <span className="brand-text">SwachPay</span>
+          </a>
         </div>
 
         {/* Hamburger */}
@@ -60,12 +65,22 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul id="primary-navigation" className={menuOpen ? "active" : ""}>
-          <li onClick={onNavItemClick}><a href="#">Home</a></li>
-          <li onClick={onNavItemClick}><a href="#about">About us</a></li>
-          <li onClick={onNavItemClick}><a href="#features">Features</a></li>
-          <li onClick={onNavItemClick}><a href="#download">Download</a></li>
           <li onClick={onNavItemClick}>
-            <a href="#contact" className="btn">Contact us</a>
+            <a href="#">Home</a>
+          </li>
+          <li onClick={onNavItemClick}>
+            <a href="#about">About us</a>
+          </li>
+          <li onClick={onNavItemClick}>
+            <a href="#features">Features</a>
+          </li>
+          <li onClick={onNavItemClick}>
+            <a href="#download">Download</a>
+          </li>
+          <li onClick={onNavItemClick}>
+            <a href="#contact" className="btn">
+              Contact us
+            </a>
           </li>
         </ul>
       </nav>
