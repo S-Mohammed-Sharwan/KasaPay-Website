@@ -16,7 +16,7 @@ const Hero = ({ onNavItemClick }) => {
             Streamline Bill Payments with our secure and efficient platform. 
             Trusted by 20,000+ users across Mangalore and India.
           </p>
-          <p className='hero-suptitle'> Powered by HasiruDala</p>
+          {/* <p className='hero-suptitle'> Powered by HasiruDala</p> */}
 
           {/* Button instead of li */}
           <button className="btn" onClick={onNavItemClick}>
